@@ -1,0 +1,22 @@
+.navbar-brand {
+	height: 120px;
+}
+.navbar-form {
+	width: 50%;
+	padding-top: 30px;
+}
+input.form-contorl {
+	width: 60vw;
+}
+
+a img {
+	width: 150px;
+	display: block;
+}
+.nav-right {
+	width: 50%;
+}
+
+.logo {
+	width: 200px;
+}
