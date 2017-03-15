@@ -1,12 +1,13 @@
 .navbar-brand {
 	height: 120px;
 }
-.navbar-form {
-	width: 50%;
+form.navbar-form {
+	width: 70%;
 	padding-top: 30px;
 }
-input.form-contorl {
-	width: 60vw;
+.navbar-form input, .navbar-form .form-control {
+    border: none;
+    width: 500px;
 }
 
 a img {
@@ -19,4 +20,22 @@ a img {
 
 .logo {
 	width: 200px;
+}
+.chbx-label {
+	margin-right: 20px;
+	color: white;
+}
+
+footer {
+	background-color: #3e3f3a;
+	color: white;
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+	bottom: 0;
+}
+#x-icon {
+	width: 20px;
+	display: block;
+	margin-left: 10px;
 }
