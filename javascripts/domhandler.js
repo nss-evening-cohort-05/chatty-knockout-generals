@@ -12,17 +12,34 @@ function captureInfo(){
 	newText.text = userInput.value;
 	newText.id = counter;
 	counter++;
-	// console.log(newText);
-	// console.log(counter);
 	ClipChat.addMessage(newText);
 	ClipChat.printDOM();
+}
+function deleteDiv(e){
+	if (e.target.id === "x-icon"){
+		// ClipChat.deleteMessage();
+	}
 }
 
 function enterKey (e){
 	if (e.keyCode === 13) {
-		// console.log("enter key works");
 		captureInfo();
 	}
 }
 
 userInput.addEventListener("keypress", enterKey);
+window.addEventListener("click", deleteDiv);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
