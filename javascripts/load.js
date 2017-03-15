@@ -1,24 +1,27 @@
-var ClipChat = (function(oldClipChat) {
+ var ClipChat = (function(oldClipChat) {
 
 
-	function loadFile() {
+     oldClipChat.loadFile = function() {
+             var data = JSON.parse(this.responseText);
+             data = data.messages;
+             console.log(data);
+             ClipChat.addJson(data);
+         },
 
-        var data = JSON.parse(this.responseText);
-        makeDom(data);
-    }
+         oldClipChat.loadIfFileFails = function() {
+             console.log("json error");
 
-    function loadIfFileFails() {
-
-
-    }
-
-    var myRequest = new XMLHttpRequest();
-    myRequest.addEventListener("load", loadFile);
-    myRequest.addEventListener("error", loadIfFileFails);
-    myRequest.open("GET", "messages.json");
-    myRequest.send();
-
-    return oldClipChat;
+         }
 
 
-})(ClipChat || {});
+
+     return oldClipChat;
+
+
+ })(ClipChat || {});
+
+ var myRequest = new XMLHttpRequest();
+ myRequest.addEventListener("load", ClipChat.loadFile);
+ myRequest.addEventListener("error", ClipChat.loadIfFileFails);
+ myRequest.open("GET", "javascripts/messages.json");
+ myRequest.send();
