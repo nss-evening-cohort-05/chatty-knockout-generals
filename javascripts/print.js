@@ -1,15 +1,22 @@
 var ClipChat = (function(oldClipChat){
 
-var messageText = []
-var messageInput = "";
+var messageArray = []
 
-oldClipChat.captureInput = function() {
-	console.log("It's linked");
-	// messageInput = document.getElementById('message-text').value;
-	// console.log("messageInput", messageInput);
-	// messageText.push(messageInput);
-	// console.log("messageText", messageText); 
-}
+	oldClipChat.addMessage = function (newText){
+		messageArray.unshift(newText);
+		console.log(messageArray);
+	},
+	oldClipChat.printDOM = function(){
+		var tableString = "";
+		for (var x = 0; x < messageArray.length; x++){
+			
+			tableString += `<tr><td>${messageArray[x].text}</td>`
+			tableString += `<td><a id="${messageArray[x].id}" href="#"><img id="x-icon" src="x-icon.png"></a>`
+	    	tableString += `</td></tr>`
+		}
+		messageContainer.innerHTML = tableString;
+	}
+
 
 return oldClipChat;
 
