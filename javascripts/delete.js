@@ -1,10 +1,10 @@
-var ClipChat = (function(oldClipChat){
+var ClipChat = (function(oldClipChat) {
 
-	oldClipChat.testDelete = function(){
-		console.log("Delete.js is working");
-	}
+    oldClipChat.testDelete = function() {
+        console.log("Delete.js is working");
+    }
 
-	return oldClipChat
+    return oldClipChat
 
 
 })(ClipChat || {});

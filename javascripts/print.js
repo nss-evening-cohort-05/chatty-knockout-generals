@@ -1,10 +1,19 @@
 var ClipChat = (function(oldClipChat){
 
+
+
 var messageArray = []
 
 	oldClipChat.addMessage = function (newText){
 		messageArray.unshift(newText);
 		console.log(messageArray);
+	},
+	oldClipChat.addJson = function (data){
+		for (var i = 0; i < data.length; i++){
+			messageArray.push(data[i]);
+
+		}
+		ClipChat.printDOM();
 	},
 	oldClipChat.printDOM = function(){
 		var tableString = "";
@@ -15,7 +24,9 @@ var messageArray = []
 	    	tableString += `</td></tr>`
 		}
 		messageContainer.innerHTML = tableString;
+		console.log(messageArray);
 	}
+
 
 
 return oldClipChat;
