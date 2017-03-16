@@ -13,7 +13,7 @@ var messageArray = []
 			messageArray.push(data[i]);
 
 		}
-		console.log(messageArray);
+		ClipChat.printDOM();
 	},
 	oldClipChat.printDOM = function(){
 		var tableString = "";

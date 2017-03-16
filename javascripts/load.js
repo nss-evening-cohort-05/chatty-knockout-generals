@@ -4,13 +4,11 @@
      oldClipChat.loadFile = function() {
              var data = JSON.parse(this.responseText);
              data = data.messages;
-             console.log(data);
              ClipChat.addJson(data);
          },
 
          oldClipChat.loadIfFileFails = function() {
              console.log("json error");
-
          }
 
 

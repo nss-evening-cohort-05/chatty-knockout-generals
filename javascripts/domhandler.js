@@ -6,40 +6,28 @@ var largeText = document.getElementById("largeText");
 
 counter = 6;
 
-function captureInfo(){
-	var newText = {}
+function captureInfo() {
+    var newText = {}
 
-	newText.text = userInput.value;
-	newText.id = counter;
-	counter++;
-	ClipChat.addMessage(newText);
-	ClipChat.printDOM();
-}
-function deleteDiv(e){
-	if (e.target.id === "x-icon"){
-		// ClipChat.deleteMessage();
-	}
+    newText.text = userInput.value;
+    newText.id = counter;
+    counter++;
+    ClipChat.addMessage(newText);
+    ClipChat.printDOM();
+    userInput.value = "";
 }
 
-function enterKey (e){
-	if (e.keyCode === 13) {
-		captureInfo();
-	}
+function deleteDiv(e) {
+    if (e.target.id === "x-icon") {
+        // ClipChat.deleteMessage();
+    }
+}
+
+function enterKey(e) {
+    if (e.keyCode === 13) {
+        captureInfo();
+    }
 }
 
 userInput.addEventListener("keypress", enterKey);
 window.addEventListener("click", deleteDiv);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
