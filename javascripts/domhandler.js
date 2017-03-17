@@ -30,12 +30,15 @@ function enterKey(e) {
 }
 
 function invertColors() {
-    console.log("body.classList", body[0].classList);
     body[0].classList.toggle("inverse");
-    console.log("table.classList", table.classList);
     table.classList.toggle("inverse");
 }
 
+function biggerText() {
+    table.classList.toggle("bigLetters");
+}
+
+largeText.addEventListener("change", biggerText);
 darkTheme.addEventListener("change", invertColors);
 clearButton.addEventListener("click", function(){
     ClipChat.clearAll();
