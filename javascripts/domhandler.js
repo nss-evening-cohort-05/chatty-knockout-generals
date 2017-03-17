@@ -4,22 +4,20 @@ var clearButton = document.getElementById("clearButton");
 var darkTheme = document.getElementById("darkTheme");
 var largeText = document.getElementById("largeText");
 
-counter = 6;
-
 function captureInfo() {
-    var newText = {}
-
+    var newText = {};
     newText.text = userInput.value;
-    newText.id = counter;
-    counter++;
+    newText.id = ClipChat.getIdCounter();
     ClipChat.addMessage(newText);
     ClipChat.printDOM();
     userInput.value = "";
 }
 
 function deleteDiv(e) {
-    if (e.target.id === "x-icon") {
-        // ClipChat.deleteMessage();
+    if (e.target.className === "x-icon") {
+        let deleteTarget = e.target.parentNode.id;
+        ClipChat.deleteMessage(deleteTarget);
+        ClipChat.printDOM();
     }
 }
 
@@ -29,5 +27,8 @@ function enterKey(e) {
     }
 }
 
+clearButton.addEventListener("click", function(){
+    ClipChat.clearAll();
+});
 userInput.addEventListener("keypress", enterKey);
 window.addEventListener("click", deleteDiv);
