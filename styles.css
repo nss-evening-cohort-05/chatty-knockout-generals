@@ -1,7 +1,7 @@
 .navbar-brand {
 	height: 120px;
 }
-form.navbar-form {
+.navbar-form {
 	width: 70%;
 	padding-top: 30px;
 }
@@ -34,7 +34,7 @@ footer {
 	padding: 10px;
 	bottom: 0;
 }
-#x-icon {
+.x-icon {
 	width: 20px;
 	display: block;
 	margin-left: 10px;
