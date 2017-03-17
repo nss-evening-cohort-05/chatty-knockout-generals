@@ -3,6 +3,8 @@ var messageContainer = document.getElementById("message-container");
 var clearButton = document.getElementById("clearButton");
 var darkTheme = document.getElementById("darkTheme");
 var largeText = document.getElementById("largeText");
+var body = document.getElementsByTagName("body");
+var table = document.getElementById("table");
 
 function captureInfo() {
     var newText = {};
@@ -27,6 +29,14 @@ function enterKey(e) {
     }
 }
 
+function invertColors() {
+    console.log("body.classList", body[0].classList);
+    body[0].classList.toggle("inverse");
+    console.log("table.classList", table.classList);
+    table.classList.toggle("inverse");
+}
+
+darkTheme.addEventListener("change", invertColors);
 clearButton.addEventListener("click", function(){
     ClipChat.clearAll();
 });
