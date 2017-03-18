@@ -9,6 +9,7 @@
 ##### This was a group project with 5 developers where each person did a section of code. 
 ##### Contriubers: Ben Greaves, Ellis Thomas, Bryan Miller, Anessa Ortner, and Matt Hensley.
 
+## Screen Shots
 
 ![Screen Shot](https://raw.githubusercontent.com/nss-evening-cohort-05/chatty-knockout-generals/master/screenshot.jpg "Screen Shot")
 
@@ -17,6 +18,9 @@
 ![Screen SHot](https://raw.githubusercontent.com/nss-evening-cohort-05/chatty-knockout-generals/master/Largetext.jpg "Large Text")
 
 ![Planning Board](https://raw.githubusercontent.com/nss-evening-cohort-05/chatty-knockout-generals/master/planningboard.JPG "Planning Board")
+
+
+## Assignment Details 
 
 
 ### Navigation bar
