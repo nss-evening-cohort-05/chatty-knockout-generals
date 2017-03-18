@@ -13,6 +13,7 @@ function captureInfo() {
     ClipChat.addMessage(newText);
     ClipChat.printDOM();
     userInput.value = "";
+    clearButton.removeAttribute("disabled");
 }
 
 function deleteDiv(e) {

@@ -40,6 +40,7 @@ var ClipChat = (function(oldClipChat) {
     oldClipChat.clearAll = function(){
     	messageArray = [];
     	userInput.value = "";
+        clearButton.setAttribute("disabled", true);
     	ClipChat.printDOM();
     }
     oldClipChat.getIdCounter = function(){
