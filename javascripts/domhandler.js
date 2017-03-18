@@ -5,6 +5,7 @@ var darkTheme = document.getElementById("darkTheme");
 var largeText = document.getElementById("largeText");
 var body = document.getElementsByTagName("body");
 var table = document.getElementById("table");
+var talkButton = document.getElementById("talk-icon");
 
 function captureInfo() {
     var newText = {};
@@ -40,6 +41,16 @@ function biggerText() {
     table.classList.toggle("bigLetters");
 }
 
+function talkDiv(e) {
+    if (e.target.className === "audio-icon") {
+        let speakTarget = e.target.parentNode.id;
+
+        ClipChat.speakMessage(speakTarget);
+        
+    }
+}
+
+window.addEventListener("click", talkDiv);
 largeText.addEventListener("change", biggerText);
 darkTheme.addEventListener("change", invertColors);
 clearButton.addEventListener("click", function(){

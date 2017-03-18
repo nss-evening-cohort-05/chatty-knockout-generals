@@ -52,6 +52,12 @@ footer {
 	display: block;
 	margin-left: 10px;
 }
+
+.audio-icon {
+	width: 20px;
+	display: block;
+}
+
 .inverse {
 	color: white;
 	background-color: #3e3f3a;

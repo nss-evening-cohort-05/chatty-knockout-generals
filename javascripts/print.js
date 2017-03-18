@@ -18,23 +18,32 @@ var ClipChat = (function(oldClipChat) {
 	        for (var x = 0; x < messageArray.length; x++) {
 	            tableString += `<tr><td>${messageArray[x].timeStamp}</td><td>${messageArray[x].text}</td>`
 	            tableString += `<td><a id="${messageArray[x].id}" href="#"><img class="x-icon" src="x-icon.png"></a>`
-	            tableString += `</td></tr>`
+                tableString += `</td><td><a id="${messageArray[x].id}" href="#"><img class="audio-icon" src="audio-icon.png"></a></td></tr>`
 	        }
 	    } else {
 	    	for (var x = 0; x < 20; x++) {
-	            tableString += `<tr><td>${messageArray[x].text}</td>`
+                tableString += `<tr><td>${messageArray[x].timeStamp}</td><td>${messageArray[x].text}</td>`
 	            tableString += `<td><a id="${messageArray[x].id}" href="#"><img class="x-icon" src="x-icon.png"></a>`
-	            tableString += `</td></tr>`
+	            tableString += `</td><td><a id="${messageArray[x].id}" href="#"><img class="audio-icon" src="audio-icon.png"></a></td></tr>`
 	        }
 	    }
         messageContainer.innerHTML = tableString;
     },
     oldClipChat.deleteMessage = function(messageID){
+        messageID = parseInt(messageID);
+        for (let i = 0; i < messageArray.length; i++) {
+            if (messageArray[i].id === messageID) {
+                messageArray.splice(i, 1);
+            }
+        }
+    },
+    oldClipChat.speakMessage = function(messageID){
     	messageID = parseInt(messageID);
     	for (let i = 0; i < messageArray.length; i++) {
-    		if (messageArray[i].id === messageID) {
-    			messageArray.splice(i, 1);
-    		}
+            if (messageArray[i].id === messageID) {
+                var toSpeak = messageArray[i].text;
+                responsiveVoice.speak(toSpeak);
+            }
     	}
     },
     oldClipChat.clearAll = function(){
