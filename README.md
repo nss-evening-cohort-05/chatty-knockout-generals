@@ -1,20 +1,22 @@
+# Clip Chat
+
+
+![Logo](https://raw.githubusercontent.com/nss-evening-cohort-05/chatty-knockout-generals/master/ClipChat-logo.png "Logo")
+
+
 
 ##### This is a group chat forum where multiple users can have a conversation. 
 ##### This was a group project with 5 developers where each person did a section of code. 
 ##### Contriubers: Ben Greaves, Ellis Thomas, Bryan Miller, Anessa Ortner, and Matt Hensley.
 
 
-![Screen Shot](chatty-knockout-generals/screenshot.jpg "Screen Shot")
+![Screen Shot](https://raw.githubusercontent.com/nss-evening-cohort-05/chatty-knockout-generals/master/screenshot.jpg "Screen Shot")
 
-![Screen Shot](chatty-knockout-generals/inverse.jpg "Inverse")
+![Screen Shot](https://raw.githubusercontent.com/nss-evening-cohort-05/chatty-knockout-generals/master/inverse.jpg "Inverse")
 
-![Screen SHot](chatty-knockout-generals/Largetext.jpg "Large Text")
+![Screen SHot](https://raw.githubusercontent.com/nss-evening-cohort-05/chatty-knockout-generals/master/Largetext.jpg "Large Text")
 
-![Planning Board](chatty-knockout-generals/planningboard.JPG "Planning Board")
-
-![Logo](chatty-knockout-generals/ClipChat-logo.png "Logo")
-
-
+![Planning Board](https://raw.githubusercontent.com/nss-evening-cohort-05/chatty-knockout-generals/master/planningboard.JPG "Planning Board")
 
 
 ### Navigation bar
