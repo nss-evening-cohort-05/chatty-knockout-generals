@@ -1,8 +1,20 @@
+.btn {
+	background-color: #a2b550;
+}
+
+.btn:hover {
+	background-color: #cbde7b;
+}
+
+.btn.disabled, .btn.disabled:hover {
+	background-color: gray;
+}
+
 .navbar-brand {
 	height: 120px;
 }
 .navbar-form {
-	width: 70%;
+	width: 100%;
 	padding-top: 30px;
 }
 .navbar-form input, .navbar-form .form-control {
@@ -29,11 +41,12 @@ a img {
 footer {
 	background-color: #3e3f3a;
 	color: white;
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	padding: 10px;
 	bottom: 0;
 }
+
 .x-icon {
 	width: 20px;
 	display: block;
@@ -47,3 +60,29 @@ footer {
 .bigLetters {
 	font-size: 4rem;
 }
+
+@media(max-width: 840px){
+	.navbar-form input, .navbar-form .form-control {
+    border: none;
+    width: 300px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
