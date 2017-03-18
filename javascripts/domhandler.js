@@ -10,6 +10,7 @@ function captureInfo() {
     var newText = {};
     newText.text = userInput.value;
     newText.id = ClipChat.getIdCounter();
+    newText.timeStamp = ClipChat.getDate();
     ClipChat.addMessage(newText);
     ClipChat.printDOM();
     userInput.value = "";
