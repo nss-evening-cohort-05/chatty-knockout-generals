@@ -16,7 +16,7 @@ var ClipChat = (function(oldClipChat) {
         var tableString = "";
         if (messageArray.length < 20) {
 	        for (var x = 0; x < messageArray.length; x++) {
-	            tableString += `<tr><td>${messageArray[x].text}</td>`
+	            tableString += `<tr><td>${messageArray[x].timeStamp}</td><td>${messageArray[x].text}</td>`
 	            tableString += `<td><a id="${messageArray[x].id}" href="#"><img class="x-icon" src="x-icon.png"></a>`
 	            tableString += `</td></tr>`
 	        }
@@ -47,6 +47,11 @@ var ClipChat = (function(oldClipChat) {
     	let currID = idCounter;
     	idCounter++;
     	return currID;
+    }
+
+    oldClipChat.getDate = function() {
+        var newDate = moment().format("lll");
+        return newDate;
     }
 
 	return oldClipChat;
