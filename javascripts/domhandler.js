@@ -24,7 +24,7 @@ function deleteDiv(e) {
 }
 
 function enterKey(e) {
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13 && userInput.value !== "") {
         captureInfo();
     }
 }
