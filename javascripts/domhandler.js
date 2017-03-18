@@ -13,6 +13,7 @@ function captureInfo() {
     ClipChat.addMessage(newText);
     ClipChat.printDOM();
     userInput.value = "";
+    clearButton.removeAttribute("disabled");
 }
 
 function deleteDiv(e) {
@@ -24,7 +25,7 @@ function deleteDiv(e) {
 }
 
 function enterKey(e) {
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13 && userInput.value !== "") {
         captureInfo();
     }
 }
