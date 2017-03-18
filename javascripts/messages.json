@@ -3,27 +3,32 @@
 		{
 			"id": 1,
 			"text": "Hey does anyone have any restaurant recommendations?",
-			"image": ""
+			"image": "",
+			"timeStamp": "Mar 20, 2017 5:50 PM"
 		},
 		{
 			"id": 2,
 			"text": "Have you tried Hattie B's hot chicken?",
-			"image": ""
+			"image": "",
+			"timeStamp": "Mar 20, 2017 5:52 PM"
 		},
 		{
 			"id": 3,
 			"text": "No, Prince's hot chicken is better.",
-			"image": ""
+			"image": "",
+			"timeStamp": "Mar 20, 2017 5:55 PM"
 		},
 		{
 			"id": 4,
 			"text": "I like cold chicken.",
-			"image": ""
+			"image": "",
+			"timeStamp": "Mar 20, 2017 5:56 PM"
 		},
 		{
 			"id": 5,
 			"text": "I gave up cold chicken cold turkey.",
-			"image": ""
+			"image": "",
+			"timeStamp": "Mar 20, 2017 5:59 PM"
 		}
 
 	]	
