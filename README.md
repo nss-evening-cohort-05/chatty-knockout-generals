@@ -7,7 +7,7 @@
 
 ##### This is a group chat forum where multiple users can have a conversation. 
 ##### This was a group project with 5 developers where each person did a section of code. 
-##### Contriubers: Ben Greaves, Ellis Thomas, Bryan Miller, Anessa Ortner, and Matt Hensley.
+##### Contributers: Ben Greaves, Ellis Thomas, Bryan Miller, Anessa Ortner, and Matt Hensley.
 
 ## Screen Shots
 
