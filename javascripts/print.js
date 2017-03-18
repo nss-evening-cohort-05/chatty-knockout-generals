@@ -8,7 +8,7 @@ var ClipChat = (function(oldClipChat) {
     },
     oldClipChat.addJson = function(data) {
         for (let i = 0; i < data.length; i++) {
-            messageArray.push(data[i]);
+            messageArray.unshift(data[i]);
         }
         ClipChat.printDOM();
     },
