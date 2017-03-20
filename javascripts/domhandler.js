@@ -44,17 +44,13 @@ function biggerText() {
 function talkDiv(e) {
     if (e.target.className === "audio-icon") {
         let speakTarget = e.target.parentNode.id;
-
         ClipChat.speakMessage(speakTarget);
-        
     }
 }
 
 window.addEventListener("click", talkDiv);
 largeText.addEventListener("change", biggerText);
 darkTheme.addEventListener("change", invertColors);
-clearButton.addEventListener("click", function(){
-    ClipChat.clearAll();
-});
+clearButton.addEventListener("click", ClipChat.clearAll);
 userInput.addEventListener("keypress", enterKey);
 window.addEventListener("click", deleteDiv);

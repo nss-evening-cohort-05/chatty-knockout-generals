@@ -6,5 +6,4 @@ var ClipChat = (function(oldClipChat) {
 
     return oldClipChat
 
-
 })(ClipChat || {});
